@@ -1,0 +1,6 @@
+#  Byte-compiled
+__pycache__/
+# for Replit,do not use theembedded venv Python
+venv/
+config/config
+.DS_Store
