@@ -1,0 +1,24 @@
+以下為步驟
+
+1.希望採全端的方式建立 github pages 網站
+2.近端，中端，已完成學習>>最後就是遠端，也就是雲端啟用動態網站編輯網頁內容
+
+3.登入gmail帳號>> https:///replit.com
+4.在Replit 中建立Real >> 選用python template >> 將專案命名為w15
+
+在 shell 頁面輸入git version
+git init
+git branch -m main
+
+git submodule add https://github.com/mdecycu/cmsimde.git cmsimde 曾加以個子模組
+
+利用下列指令，將cmsimde 目錄中的up_dir 內全部資料複製到專案根目錄
+
+確認目前位於根目錄
+cp -R ./cmsimde/up_dir/* ./ #拉出檔案到目前的資料夾
+
+此時按下 run>> 根據 .replit 中的設定，利用 執行 main.py 但要安裝模組才能使用
+
+顯示出 Replit 內建的 python3 環境並沒有執行 cmsimde 所需的模組
+pip install flask flask_cors bs4 lxml pelican markdown gevent  安裝模組的指令
+
